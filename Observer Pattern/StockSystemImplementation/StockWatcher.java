@@ -12,7 +12,7 @@ public class StockWatcher implements Observer {
 	}
 
 	public void update(){
-		System.out.println("Google Stock -> "+stockDataCenter.getGoog()
+		System.out.println("observerID -> "+observerID +"\nGoogle Stock -> "+stockDataCenter.getGoog()
 			+"\nApple Stock -> "+stockDataCenter.getAapl());
 	}
 
