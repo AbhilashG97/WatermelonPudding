@@ -5,17 +5,17 @@ import java.util.ArrayList;
 public class MVCFactory {
 
     private ArrayList<Cupcake> cupcakeList;
-    private ArrayList<Icecream> icecreamList;
+    private ArrayList<IceCream> iceCreamList;
     private int cupcakeResourceCount;
-    private int icecreamResourceCount;
+    private int iceCreamResourceCount;
 
     public MVCFactory() {
 
         cupcakeList = new ArrayList<>();
-        icecreamList = new ArrayList<>();
+        iceCreamList = new ArrayList<>();
 
         cupcakeResourceCount = 30;
-        icecreamResourceCount = 30;
+        iceCreamResourceCount = 30;
     }
 
     public ArrayList<Cupcake> getCupcakeList() {
@@ -26,12 +26,12 @@ public class MVCFactory {
         this.cupcakeList = cupcakeList;
     }
 
-    public ArrayList<Icecream> getIcecreamList() {
-        return icecreamList;
+    public ArrayList<IceCream> getIceCreamList() {
+        return iceCreamList;
     }
 
-    public void setIcecreamList(ArrayList<Icecream> icecreamList) {
-        this.icecreamList = icecreamList;
+    public void setIceCreamList(ArrayList<IceCream> iceCreamList) {
+        this.iceCreamList = iceCreamList;
     }
 
     public int getCupcakeResourceCount() {
@@ -42,12 +42,12 @@ public class MVCFactory {
         this.cupcakeResourceCount = cupcakeResourceCount;
     }
 
-    public int getIcecreamResourceCount() {
-        return icecreamResourceCount;
+    public int getIceCreamResourceCount() {
+        return iceCreamResourceCount;
     }
 
-    public void setIcecreamResourceCount(int icecreamResourceCount) {
-        this.icecreamResourceCount = icecreamResourceCount;
+    public void setIceCreamResourceCount(int iceCreamResourceCount) {
+        this.iceCreamResourceCount = iceCreamResourceCount;
     }
 
     public boolean makeCupcake(String topping, int price) {
@@ -67,10 +67,10 @@ public class MVCFactory {
 
         boolean canMakeIcecream = false;
 
-        if (icecreamResourceCount > 0) {
-            Icecream icecream = new Icecream(flavor, price);
-            icecreamResourceCount--;
-            icecreamList.add(icecream);
+        if (iceCreamResourceCount > 0) {
+            IceCream iceCream = new IceCream(flavor, price);
+            iceCreamResourceCount--;
+            iceCreamList.add(iceCream);
             canMakeIcecream = true;
         }
 

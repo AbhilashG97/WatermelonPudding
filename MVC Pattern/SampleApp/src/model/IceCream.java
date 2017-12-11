@@ -1,11 +1,11 @@
 package model;
 
-public class Icecream {
+public class IceCream {
 
     private String flavor;
     private int price;
 
-    public Icecream(String flavor, int price) {
+    public IceCream(String flavor, int price) {
         this.flavor = flavor;
         this.price = price;
     }
