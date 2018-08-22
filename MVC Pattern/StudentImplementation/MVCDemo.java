@@ -18,6 +18,7 @@ public class MVCDemo {
 		Student student = new Student();
 		student.setName(scanner.nextLine());
 		student.setRoll(scanner.next());
+		scanner.close();
 		return student;
 	}
 }
