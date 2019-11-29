@@ -1,0 +1,13 @@
+public class HouseBlend extends Beverage {
+
+    private static final float HOUSEBLEND_COST = 150.0F;
+
+    public HouseBlend(String description) {
+        setDescription(description);
+    }
+
+    @Override
+    public float cost() {
+        return HOUSEBLEND_COST;
+    }
+}
