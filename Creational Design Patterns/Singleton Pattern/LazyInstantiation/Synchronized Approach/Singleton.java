@@ -3,10 +3,10 @@ public class Singleton {
 	private static Singleton singletonObject;
 
 	private Singleton(){
-
+		// Default constructor
 	}
 
-	public static Singleton getInstance(){
+	public static synchronized Singleton getInstance(){
 		if(singletonObject == null){
 			return new Singleton();
 		}

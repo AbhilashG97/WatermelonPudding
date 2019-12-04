@@ -5,7 +5,9 @@ public abstract class Beverage {
         boilWater();
         makeBeverage();
         pourInCup();
-        addCondiments();
+        if (hasCondiments()) {
+            addCondiments();
+        }
     }
 
     // other methods
@@ -17,6 +19,15 @@ public abstract class Beverage {
 
     public void pourInCup() {
         System.out.println("Pouring in cup");
+    }
+
+    /**
+     * This is a hook() method which may or may not be 
+     * implemented by classes.
+     * @return boolean tells whether condiments need to be added or not.
+     */
+    public boolean hasCondiments() {
+        return true;
     }
 
     public abstract void addCondiments();

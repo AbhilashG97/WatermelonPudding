@@ -17,7 +17,6 @@ The ```UML``` diagram can be shown below -
 
 <p align="center"><img src ="images/uml-diagram.png" /></p>
 
-
 The template method in this case is the ```prepareRecipie()``` method. 
 
 On executing the main method, you'll notice that for different classes the template method shows different results without the template method being modified itself. 
