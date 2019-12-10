@@ -30,3 +30,9 @@ There are two ways to implement Adapter Pattern, which are as follows:
     In this implementation the following is done:
 
     An instance of the Adaptee is created inside the Adapter to access the required method. Also, here the Adapter class extends the Adaptee and it also implements the AdapterInterface.  
+
+## Examples
+
+Some examples that were taught in class are listed below - 
+
+1.  AudioPlayer - A player that plays audio in Windows Media Player, WAV Player etc. 
