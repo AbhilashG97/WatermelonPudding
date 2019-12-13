@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-
-public interface Observable {
+public interface Subject {
 
 	void add(Observer observer);
 

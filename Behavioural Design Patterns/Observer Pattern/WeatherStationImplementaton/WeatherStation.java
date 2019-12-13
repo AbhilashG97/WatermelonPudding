@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class WeatherStation implements Observable {
+public class WeatherStation implements Subject {
 
 	private int temperature;
 	private ArrayList<Observer> observers;
@@ -15,7 +15,12 @@ public class WeatherStation implements Observable {
 	}
 
 	public void remove(Observer observer){
-		observers.remove(observer);
+		
+		int value = observers.indexOf(observer);
+
+		if (value >= 0) {
+			observers.remove(value);
+		}
 	}
 
 	public void setTemperature(int temperature){
@@ -25,12 +30,11 @@ public class WeatherStation implements Observable {
 
 	public void notifyObservers(){
 		for(Observer observer : observers){
-			observer.update();
+			observer.update(temperature);
 		}
 	}
 
 	public int getTemperature(){
 		return temperature;
 	}
-
 }

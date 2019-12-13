@@ -1,5 +1,6 @@
 public class DemoObserver {
 	public static void main(String[] args) {
+
 		WeatherStation weatherStation = new WeatherStation();
 
 		PhoneDisplay motog5 = new PhoneDisplay(weatherStation);
@@ -12,6 +13,5 @@ public class DemoObserver {
 		weatherStation.setTemperature(12);
 		System.out.println("*************************");
 		weatherStation.setTemperature(56);
-
 	}
 }
