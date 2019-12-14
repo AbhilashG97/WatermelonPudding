@@ -19,6 +19,8 @@ Some advantages of having loosely-coupled code in Observer pattern are as follow
 
 :boom: Instance of ```Subject```/```Observable``` is present in the ```Observer``` as it makes it easy to register and un-register observers.
 
+:star2: The only thing the ```Subject``` knows about an ```Observer``` is that it implements a certain interface.  
+
 **pull vs poll**
 
 ```pull``` uses force to move something towards oneself. 
@@ -31,3 +33,8 @@ The in-built Java API has a ```setChanged()``` method which needs to be called i
 
 ## UML Diagram
 
+The UML for the observer pattern can be found below - 
+
+<p align="center"><img src ="images/image.png" /></p>
+
+:warning: The subject holds a collection of all the observers in its concrete implementations.
